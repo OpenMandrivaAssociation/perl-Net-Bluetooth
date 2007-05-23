@@ -9,7 +9,8 @@ Summary:        Net::Bluetooth - Perl Bluetooth Interface
 Source0:        ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Bluetooth-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
+BuildRequires: bluez-devel
+BuildRequires: perl-devel
 Requires(pre):  bluez
 
 %description
