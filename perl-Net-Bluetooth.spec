@@ -1,7 +1,7 @@
 %define realname   Net-Bluetooth
 
 Name:		perl-%{realname}
-Version:        0.39
+Version:        0.40
 Release:        %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
