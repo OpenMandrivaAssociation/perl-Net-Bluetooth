@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:        0.40
-Release:        %mkrel 1
+Release:        %mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:        Net::Bluetooth - Perl Bluetooth Interface
