@@ -14,7 +14,6 @@ BuildRequires: perl-devel
 Requires(pre):  bluez
 
 %description
-
 Net::Bluetooth - Perl Bluetooth Interface
 This module creates a Bluetooth interface for Perl.
 
