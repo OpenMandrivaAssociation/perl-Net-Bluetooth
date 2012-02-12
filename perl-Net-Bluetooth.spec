@@ -40,8 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc Changes README
-%{perl_vendorarch}/*
-%{perl_vendorarch}/auto/Net/*
+%{perl_vendorarch}/Net/Bluetooth.pm
 %dir %{perl_vendorarch}/auto/Net/Bluetooth
 %{perl_vendorarch}/auto/Net/Bluetooth/*
 %{_mandir}/man3/*
