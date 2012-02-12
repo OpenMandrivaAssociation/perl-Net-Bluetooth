@@ -1,20 +1,19 @@
-%define upstream_name    Net-Bluetooth
+%define upstream_name Net-Bluetooth
 %define upstream_version 0.40
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
 Release:	2
 
-Summary:    Net::Bluetooth - Perl Bluetooth Interface
+Summary:	Net::Bluetooth - Perl Bluetooth Interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Bluetooth-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Bluetooth-%{upstream_version}.tar.bz2
 
-BuildRequires: bluez-devel
-BuildRequires: perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
-Requires(pre):  bluez
+BuildRequires:	bluez-devel
+BuildRequires:	perl-devel
+Requires(pre):	bluez
 
 %description
 Net::Bluetooth - Perl Bluetooth Interface
@@ -31,14 +30,9 @@ This module creates a Bluetooth interface for Perl.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{perl_vendorarch}/Net/Bluetooth.pm
 %dir %{perl_vendorarch}/auto/Net/Bluetooth
