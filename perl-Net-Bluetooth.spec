@@ -1,15 +1,15 @@
 %define upstream_name Net-Bluetooth
-%define upstream_version 0.40
+%define upstream_version 0.41
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Net::Bluetooth - Perl Bluetooth Interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Bluetooth-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Net-Bluetooth
+Source0:	https://cpan.metacpan.org/authors/id/A/AD/ADDUTKO/Net-Bluetooth-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	bluez-devel
@@ -84,5 +84,5 @@ make test
 
 
 
-* Wed May 23 2007 Nicolas Lécureuil <neoclust@mandriva.org> 0.39-1mdv2008.0
+* Wed May 23 2007 Nicolas Lï¿½cureuil <neoclust@mandriva.org> 0.39-1mdv2008.0
 - First Mandriva package
