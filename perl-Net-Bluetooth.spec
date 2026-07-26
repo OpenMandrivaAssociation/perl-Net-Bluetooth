@@ -1,15 +1,13 @@
 %define upstream_name Net-Bluetooth
-%define upstream_version 0.41
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.41
+Release:	2
 
 Summary:	Net::Bluetooth - Perl Bluetooth Interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-Bluetooth
-Source0:	https://cpan.metacpan.org/authors/id/A/AD/ADDUTKO/Net-Bluetooth-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AD/ADDUTKO/Net-Bluetooth-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	bluez-devel
@@ -21,7 +19,7 @@ Net::Bluetooth - Perl Bluetooth Interface
 This module creates a Bluetooth interface for Perl.
 
 %prep
-%setup -q -n Net-Bluetooth-%{upstream_version}
+%setup -q -n Net-Bluetooth-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -50,9 +48,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.400.0-1mdv2010.0
 + Revision: 404062
-- rebuild using %%perl_convert_version
-
-* Sat Feb 28 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.40-6mdv2009.1
+- rebuild using %0.41 Sat Feb 28 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.40-6mdv2009.1
 + Revision: 345984
 - rebuild
 
