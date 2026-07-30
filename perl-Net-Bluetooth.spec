@@ -2,7 +2,7 @@
 %define upstream_version 0.41
 Name:		perl-%{upstream_name}
 Version:	0.41
-Release:	2
+Release:	3
 
 Summary:	Net::Bluetooth - Perl Bluetooth Interface
 License:	GPL+ or Artistic
@@ -23,7 +23,7 @@ This module creates a Bluetooth interface for Perl.
 %setup -q -n Net-Bluetooth-0.41
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
