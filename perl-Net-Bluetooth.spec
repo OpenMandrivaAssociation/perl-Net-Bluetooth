@@ -2,7 +2,7 @@
 %define upstream_version 0.41
 Name:		perl-%{upstream_name}
 Version:	0.41
-Release:	3
+Release:	4
 
 Summary:	Net::Bluetooth - Perl Bluetooth Interface
 License:	GPL+ or Artistic
